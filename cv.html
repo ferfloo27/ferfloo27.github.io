@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Fernando Calle Gonzales</title>
+<style>
+  :root{
+    --ink:#1b2733; --muted:#56657a; --line:#d8dee7; --accent:#0f6e8c; --bg:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#eef1f5}
+  body{
+    font-family:"Segoe UI",Arial,Helvetica,sans-serif;
+    color:var(--ink); font-size:10px; line-height:1.32;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .page{background:var(--bg); padding:7mm 14mm 6mm}
+  @media screen{
+    .page{width:210mm; min-height:297mm; margin:12px auto; box-shadow:0 2px 14px rgba(0,0,0,.12)}
+  }
+  @media print{
+    .page{width:auto; padding:0}
+  }
+  header{border-bottom:2px solid var(--accent); padding-bottom:8px; margin-bottom:9px}
+  h1{font-size:23px; letter-spacing:.3px; color:var(--ink)}
+  .role{color:var(--accent); font-weight:600; font-size:12px; margin-top:2px}
+  .contact{margin-top:7px; font-size:9.6px; color:var(--muted); line-height:1.6}
+  .contact a{color:var(--muted); text-decoration:none}
+  .contact span{white-space:nowrap}
+  .sep{color:var(--line); margin:0 7px}
+  h2{
+    font-size:11px; text-transform:uppercase; letter-spacing:1.1px; color:var(--accent);
+    border-bottom:1px solid var(--line); padding-bottom:2px; margin:7px 0 5px;
+  }
+  .item{margin-bottom:5px}
+  .item-head{display:flex; justify-content:space-between; align-items:baseline; gap:10px}
+  .item-title{font-weight:700; font-size:10.8px}
+  .item-sub{font-style:italic; color:var(--muted); font-size:9.8px}
+  .item-meta{color:var(--muted); font-size:9.4px; white-space:nowrap; text-align:right}
+  ul{margin:3px 0 0 15px}
+  li{margin-bottom:1.5px}
+  .tech{color:var(--accent); font-size:9.1px; margin-top:2px}
+  .tech b{color:var(--muted); font-weight:600}
+  .grid-skills{display:grid; grid-template-columns:auto 1fr; gap:3px 10px; font-size:9.9px}
+  .grid-skills b{color:var(--muted)}
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:0 26px}
+  .profile{font-size:10.1px; color:#34404f; text-align:justify}
+  a.link{color:var(--accent); text-decoration:none}
+  .tag{color:var(--muted); font-size:9.4px}
+  @page{size:A4; margin:10mm 14mm}
+  @media print{
+    html,body{background:#fff}
+    section:last-child{margin-bottom:0}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Fernando Calle Gonzales</h1>
+    <div class="role">Desarrollador Mobile &nbsp;·&nbsp; Android (Kotlin / Jetpack Compose) &amp; Flutter</div>
+    <div class="contact">
+      <span>Cochabamba, Bolivia</span><span class="sep">|</span>
+      <span>+591 67479783</span><span class="sep">|</span>
+      <span>fercallg@gmail.com</span><br>
+      <span>github.com/ferfloo27</span><span class="sep">|</span>
+      <span>linkedin.com/in/fernando-calle-gonzales</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Perfil Profesional</h2>
+    <p class="profile">
+      Egresado de Ingeniería de Sistemas (UMSS) enfocado en el desarrollo de aplicaciones móviles
+      con <b>Kotlin, Jetpack Compose y Flutter</b>, con experiencia también en React Native. He construido
+      y desplegado aplicaciones reales aplicando arquitecturas por capas, integración de APIs y bases de
+      datos en la nube (Firebase, Supabase). Con una base en ciberseguridad por mi doble titulación, busco
+      mi primera oportunidad profesional como desarrollador mobile junior.
+    </p>
+  </section>
+
+  <section>
+    <h2>Proyectos Destacados</h2>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">ReciboToPDF — Generador de recibos institucionales</span>
+        <span class="item-meta">Demo + Código</span>
+      </div>
+      <ul>
+        <li>App multiplataforma (Android y Web) que genera recibos en PDF con autenticación e historial en la nube, con arquitectura por capas (modelos, providers, servicios, UI) y Material 3; desplegada en Vercel.</li>
+      </ul>
+      <div class="tech"><b>Tecnologías:</b> Flutter · Dart · Riverpod · Firebase (Auth/Firestore) · Material 3</div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">BLD3x3 — Entrenador de cubo de Rubik a ciegas</span>
+        <span class="item-meta">Código</span>
+      </div>
+      <ul>
+        <li>Aplicación Android <b>nativa</b> para practicar el armado del cubo 3x3 a ciegas, con onboarding, navegación y tema propio.</li>
+      </ul>
+      <div class="tech"><b>Tecnologías:</b> Kotlin · Jetpack Compose · Navigation · Material 3</div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Recetas App — Buscador de recetas y análisis nutricional</span>
+        <span class="item-meta">Código</span>
+      </div>
+      <ul>
+        <li>App móvil que busca y muestra recetas consumiendo una API externa, con información nutricional por macronutrientes.</li>
+      </ul>
+      <div class="tech"><b>Tecnologías:</b> React Native · Expo · JavaScript · Consumo de API REST</div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">CodeUniverse — Plataforma de apuntes con evaluación por IA <span class="tag">(proyecto en equipo)</span></span>
+        <span class="item-meta">Código</span>
+      </div>
+      <ul>
+        <li>Sistema académico para gestionar apuntes y automatizar evaluaciones. <b>Mi aporte:</b> integración con la API de OpenAI para la evaluación automática de respuestas.</li>
+      </ul>
+      <div class="tech"><b>Tecnologías:</b> React · PHP · Firebase · API de OpenAI</div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">Entrenador BLD — Bot de Telegram con automatización</span>
+        <span class="item-meta">Código</span>
+      </div>
+      <ul>
+        <li>Bot que entrena la memorización de pares de letras con recuerdo activo, guardando el progreso del usuario.</li>
+      </ul>
+      <div class="tech"><b>Tecnologías:</b> n8n · Supabase (PostgreSQL) · Telegram Bot API</div>
+    </div>
+
+    <div class="item">
+      <div class="item-head">
+        <span class="item-title">PoC Log4Shell (CVE-2021-44228) — Monografía de ciberseguridad</span>
+        <span class="item-meta">Código</span>
+      </div>
+      <ul>
+        <li>Prueba de concepto en laboratorio aislado sobre la vulnerabilidad Log4Shell, con análisis del vector y medidas de mitigación (hardening / Zero Trust). Base de la defensa del diplomado.</li>
+      </ul>
+      <div class="tech"><b>Tecnologías:</b> Java · Kali Linux · LDAP/JNDI · Hacking ético</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Logros</h2>
+    <ul>
+      <li><b>Ganador — Reto Zontes</b> (hackathon, Paseo Aranjuez, Cochabamba), en equipo. Reconocimiento a innovación, creatividad y excelencia en la propuesta. 2026.</li>
+      <li><b>Doble titulación</b> universitaria mediante Diplomado en Ciberseguridad (defensa aprobada).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experiencia</h2>
+    <div class="item">
+      <div class="item-head">
+        <span><span class="item-title">COMTECO</span> — <span class="item-sub">Pasantía · Asistente de Soporte Técnico</span></span>
+        <span class="item-meta">Sep 2024 – Dic 2024<br>Cochabamba, Bolivia</span>
+      </div>
+      <ul>
+        <li>Administré plataformas de provisión de servicios a clientes, apoyando la operación diaria del área.</li>
+        <li>Gestioné el abastecimiento y la asignación de equipos técnicos.</li>
+        <li>Controlé y di seguimiento a órdenes de trabajo de planta externa.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="two-col">
+    <section>
+      <h2>Educación</h2>
+      <div class="item">
+        <div class="item-title">Universidad Mayor de San Simón</div>
+        <div class="item-sub">Licenciatura en Ingeniería de Sistemas</div>
+        <div class="tag">Egresado · Titulación en trámite — Cochabamba</div>
+      </div>
+      <div class="item">
+        <div class="item-title">Diplomado en Ciberseguridad (UMSS)</div>
+        <div class="item-sub">Modalidad de doble titulación</div>
+        <div class="tag">Defensa aprobada: 28 de julio de 2026</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Idiomas</h2>
+      <div class="grid-skills">
+        <b>Español</b><span>Nativo</span>
+        <b>Inglés</b><span>A2 (Básico)</span>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <h2>Habilidades Técnicas</h2>
+    <div class="grid-skills">
+      <b>Mobile</b><span>Kotlin · Jetpack Compose · Flutter · Dart · React Native · Expo</span>
+      <b>Lenguajes</b><span>Java · JavaScript · Kotlin · Dart</span>
+      <b>Backend / BD</b><span>MySQL · PostgreSQL · Supabase · Firebase</span>
+      <b>Herramientas</b><span>Android Studio · IntelliJ IDEA · VS Code · Git · GitHub · Linux · n8n</span>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

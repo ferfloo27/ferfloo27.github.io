@@ -1,0 +1,8 @@
+# Archivos del sistema operativo
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Temporales
+*.tmp
+.chrometmp/
