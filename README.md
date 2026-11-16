@@ -1,7 +1,7 @@
 # Portafolio — Fernando Calle Gonzales
 
-Landing page de mi portafolio profesional como **desarrollador mobile** (Android / Kotlin · Flutter).
-Una sola página con mis proyectos, habilidades y CV descargable.
+Landing page de mi portafolio profesional con mis proyectos de **desarrollo de software** (web y móvil: React · Flutter · Kotlin / Jetpack Compose · React Native).
+Una sola página con mis proyectos, habilidades y contacto.
 
 ### 🌐 Ver en vivo
 **https://ferfloo27.github.io/**
@@ -35,9 +35,6 @@ python -m http.server 8000
 ```
 
 Luego abre `http://localhost:8000`.
-
-**Regenerar el PDF del CV:** edita `cv.html`, ábrelo en el navegador, `Ctrl + P` →
-*Guardar como PDF* → guarda en `assets/Fernando-Calle-Gonzales-CV.pdf`.
 
 **Agregar capturas de proyectos:** guarda la imagen en `assets/` y, en la tarjeta
 correspondiente de `index.html`, reemplaza el bloque "Captura pendiente" por tu `<img>`

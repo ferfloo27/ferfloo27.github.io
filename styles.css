@@ -346,6 +346,9 @@ ul{list-style:none}
   box-shadow:0 16px 38px rgba(16,33,48,.28);overflow:hidden;
 }
 .phone-mock img{display:block;width:100%;height:auto}
+/* Dos capturas verticales lado a lado */
+.phone-row{display:flex;gap:16px;justify-content:center;align-items:flex-start}
+.phone-row .phone-mock{width:min(168px,42%)}
 .project__badge{
   position:absolute;top:12px;left:12px;background:color-mix(in srgb,var(--ink) 80%,transparent);
   color:#fff;font-size:.72rem;font-weight:600;padding:5px 11px;border-radius:999px;letter-spacing:.3px;
